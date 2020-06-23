@@ -1,9 +1,14 @@
 .layout {
+  background: white;
+
   display: flex;
   flex-direction: column;
+
   height: 100vh;
+  margin: 0 auto;
+  max-width: 150rem;
+
   &__content {
     flex: 1;
-    background-color: $color-grey-light;
   }
 }

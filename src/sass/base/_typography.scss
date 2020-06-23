@@ -1,6 +1,37 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.7;
   color: $color-grey-dark;
+}
+
+.navigation-heading {
+  line-height: 4rem;
+  margin-top: 1rem;
+
+  &--name {
+    display: block;
+
+    font-size: 3.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+  }
+
+  &--phone {
+    display: block;
+
+    font-size: 2.6rem;
+    color: $color-primary;
+  }
+}
+
+.navigation__links {
+  a {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-grey-dark;
+    &:hover {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
 }
