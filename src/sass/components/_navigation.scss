@@ -2,36 +2,37 @@
   background-color: $color-white;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   max-width: 200rem;
-  padding: 0 6rem;
+  padding: 2rem 3rem 1.6rem 3rem;
   z-index: 1;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 
-  @media only screen and (max-width: 74em) {
-    justify-content: center;
-  }
-
-  &__logo,
-  &__links {
-    margin: 1.5rem;
+  @include respond(medium-screen) {
+    flex-direction: column;
+    align-items: center;
   }
 
   &__logo {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+
+    @include respond(x-small-screen) {
+      flex-wrap: wrap;
+    }
+
     &--truck,
     &--cottage {
       height: 8rem;
     }
     &--title {
-      @media only screen and (max-width: 48em) {
-        text-align: center;
-      }
       margin-left: 2rem;
+
+      @include respond(x-small-screen) {
+        text-align: center;
+        margin: 1.6rem 5rem 0rem 5rem;
+      }
     }
   }
 
@@ -41,5 +42,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include respond(medium-screen) {
+      margin: 2.2rem 0 1rem 0;
+    }
   }
 }
