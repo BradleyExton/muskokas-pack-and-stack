@@ -1,2 +1,6 @@
 .landingHeader {
+  &__img {
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+    height: 60vh;
+  }
 }
