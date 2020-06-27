@@ -21,14 +21,6 @@ html {
     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
   }
 
-  @include respond(medium-screen) {
-    // width < 900?
-    font-size: 50%; //1 rem = 8px, 8/16 = 50%
-  }
-
-  @include respond(small-screen) {
-  }
-
   @include respond(x-small-screen) {
     // width < 500?
     font-size: 46.87%; //1 rem = 7.5px, 8/16 = 50%

@@ -6,7 +6,16 @@ const LandingHeader = ({ headerImg }) => {
     <BackgroundImage
       className="landingHeader"
       fluid={headerImg}
-    ></BackgroundImage>
+      preserveStackingContext
+    >
+      <h1 className="landingHeader__text">
+        <span className="landingHeader__text--main">muskoka's top</span>
+        <span className="landingHeader__text--sub">movers</span>
+      </h1>
+      <a href="#" className="landingHeader__button">
+        Get a Quote
+      </a>
+    </BackgroundImage>
   )
 }
 

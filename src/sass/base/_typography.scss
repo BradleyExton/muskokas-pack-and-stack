@@ -38,3 +38,33 @@ body {
     }
   }
 }
+
+.landingHeader {
+  &__text {
+    letter-spacing: 0.5rem;
+    line-height: 7rem;
+    font-size: 10rem;
+
+    text-transform: uppercase;
+    color: $color-white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+
+    &--main,
+    &--sub {
+      font-size: 6rem;
+    }
+
+    @include respond(x-small-screen) {
+      line-height: 4rem;
+      &--main,
+      &--sub {
+        font-size: 4.43rem;
+      }
+    }
+  }
+
+  &__button {
+    font-size: 3rem;
+  }
+}
