@@ -1,5 +1,11 @@
 .landingContent {
-  height: 60vh;
-  clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-  margin-top: -10rem;
+  clip-path: polygon(0 0%, 100% 10rem, 100% 100%, 0 100%);
+  margin-top: -7rem;
+  padding-top: 11rem;
+  padding-bottom: 3.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }

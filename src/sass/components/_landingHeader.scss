@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-evenly;
 
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 calc(100% - 10rem));
   height: 60vh;
   min-height: 40rem;
   padding-bottom: 9rem;

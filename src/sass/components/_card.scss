@@ -1,0 +1,21 @@
+.card {
+  height: 30rem;
+  width: 32rem;
+  padding: 3rem;
+  margin: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+
+  &__icon {
+    width: 10rem;
+    fill: $color-primary;
+  }
+}
