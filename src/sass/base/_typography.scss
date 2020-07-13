@@ -83,3 +83,19 @@ body {
     font-size: 1.4rem;
   }
 }
+
+.quote {
+  &__title {
+    font-size: 3rem;
+    color: $color-primary;
+    margin-bottom: 3rem;
+  }
+  &__form {
+    font-size: 1.8rem;
+    color: $color-secondary;
+
+    button {
+      font-size: 1.8rem;
+    }
+  }
+}
