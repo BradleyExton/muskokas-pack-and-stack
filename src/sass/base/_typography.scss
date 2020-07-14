@@ -3,10 +3,18 @@ body {
   font-weight: 400;
   color: $color-grey-dark;
 }
+.navigation__logo {
+  color: $color-primary;
+  text-decoration: none;
+}
 
 .navigation-heading {
   line-height: 4rem;
 
+  span::after,
+  span::before {
+    text-decoration: none;
+  }
   &--name {
     display: block;
 

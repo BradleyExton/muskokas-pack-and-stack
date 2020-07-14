@@ -13,7 +13,7 @@ const quote = () => {
         >
           <label htmlFor="name">
             Name:
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
           </label>
           <label htmlFor="phone">
             Phone:
@@ -25,7 +25,7 @@ const quote = () => {
           </label>
           <label htmlFor="name">
             Details:
-            <textarea name="details" />
+            <textarea name="details" required />
           </label>
           {/* todo:  move button styles into its own component*/}
           <button type="submit">Submit</button>

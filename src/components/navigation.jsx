@@ -6,7 +6,7 @@ import cottage from "../images/cottage.jpg"
 const Navigation = () => {
   return (
     <div className="navigation">
-      <div className="navigation__logo">
+      <Link to="/" className="navigation__logo">
         <img
           className="navigation__logo--truck"
           src={truck}
@@ -23,7 +23,7 @@ const Navigation = () => {
             <span className="navigation-heading--phone">705-795-3539</span>
           </h2>
         </div>
-      </div>
+      </Link>
       <nav className="navigation__links">
         <Link to="/services" className="navigation__links--services">
           services
