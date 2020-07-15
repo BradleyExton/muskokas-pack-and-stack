@@ -25,13 +25,26 @@ const Navigation = () => {
         </div>
       </Link>
       <nav className="navigation__links">
-        <Link to="/" className="navigation__links--home">
+        <Link
+          to="/"
+          className="navigation__links--home"
+          activeClassName="navigation__links--active"
+        >
           Home
         </Link>
-        <Link to="/quote" className="navigation__links--quote">
+        <Link
+          to="/quote"
+          className="navigation__links--quote"
+          activeClassName="navigation__links--active"
+        >
           Quote
         </Link>
-        <Link to="/contact" href="#" className="navigation__links--contact">
+        <Link
+          to="/contact"
+          href="#"
+          className="navigation__links--contact"
+          activeClassName="navigation__links--active"
+        >
           Contact
         </Link>
       </nav>
