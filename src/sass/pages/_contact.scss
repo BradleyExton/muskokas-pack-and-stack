@@ -1,0 +1,19 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+
+  min-height: 40rem;
+  min-width: 45rem;
+
+  background-color: $color-white;
+
+  .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

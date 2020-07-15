@@ -107,3 +107,22 @@ body {
     }
   }
 }
+
+.contact {
+  &__title {
+    color: $color-primary;
+    font-size: 3rem;
+  }
+
+  .details {
+    margin-top: 3rem;
+    font-size: 2rem;
+    &__identifier {
+      color: $color-primary;
+    }
+
+    &__info {
+      color: $color-secondary;
+    }
+  }
+}

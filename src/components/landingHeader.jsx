@@ -1,5 +1,6 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
+import { Link } from "gatsby"
 
 const LandingHeader = ({ headerImg }) => {
   return (
@@ -12,9 +13,9 @@ const LandingHeader = ({ headerImg }) => {
         <span className="landingHeader__text--main">muskoka's top</span>
         <span className="landingHeader__text--sub">movers</span>
       </h1>
-      <a href="#" className="landingHeader__button">
+      <Link to="/quote" className="landingHeader__button">
         Get a Quote
-      </a>
+      </Link>
     </BackgroundImage>
   )
 }

@@ -25,8 +25,8 @@ const Navigation = () => {
         </div>
       </Link>
       <nav className="navigation__links">
-        <Link to="/services" className="navigation__links--services">
-          services
+        <Link to="/" className="navigation__links--home">
+          Home
         </Link>
         <Link to="/quote" className="navigation__links--quote">
           Quote
