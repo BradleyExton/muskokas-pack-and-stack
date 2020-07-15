@@ -8,29 +8,10 @@ import LandingContent from "../components/landingContent"
 const index = ({ data }) => {
   return (
     <Layout>
-      <LandingHeader headerImg={data.lakeMuskoka.childImageSharp.fluid} />
-      <LandingContent contentImg={data.road.childImageSharp.fluid} />
+      <LandingHeader />
+      <LandingContent />
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    lakeMuskoka: file(relativePath: { eq: "lake_muskoka.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    road: file(relativePath: { eq: "road.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default index
