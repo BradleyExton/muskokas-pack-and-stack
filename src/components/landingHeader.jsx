@@ -10,7 +10,7 @@ const LandingHeader = () => {
           lakeMuskoka: file(relativePath: { eq: "lake_muskoka.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 2000) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

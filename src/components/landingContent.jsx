@@ -13,7 +13,7 @@ const LandingContent = () => {
           road: file(relativePath: { eq: "road.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 2000) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
