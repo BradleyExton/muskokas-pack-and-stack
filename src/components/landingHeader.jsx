@@ -7,7 +7,7 @@ const LandingHeader = () => {
     <StaticQuery
       query={graphql`
         {
-          lakeMuskoka: file(relativePath: { eq: "lake_muskoka.jpg" }) {
+          road: file(relativePath: { eq: "road.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 2000) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -17,10 +17,10 @@ const LandingHeader = () => {
         }
       `}
       render={data =>
-        data.lakeMuskoka ? (
+        data.road ? (
           <BackgroundImage
             className="landingHeader"
-            fluid={data.lakeMuskoka.childImageSharp.fluid}
+            fluid={data.road.childImageSharp.fluid}
             preserveStackingContext
           >
             <h1 className="landingHeader__text">
